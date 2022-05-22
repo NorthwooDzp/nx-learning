@@ -23,6 +23,6 @@
       }
     }
   },
-  "tags": [],
-  "implicitDependencies": ["frontend-client"]
+  "tags": ["scope:client"],
+  "implicitDependencies": ["client"]
 }

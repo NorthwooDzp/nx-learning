@@ -23,6 +23,6 @@
       }
     }
   },
-  "tags": [],
-  "implicitDependencies": ["frontend-admin"]
+  "tags": ["scope:admin"],
+  "implicitDependencies": ["admin"]
 }
