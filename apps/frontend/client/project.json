@@ -5,9 +5,7 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/frontend/client",
         "index": "apps/frontend/client/src/index.html",
@@ -19,9 +17,7 @@
           "apps/frontend/client/src/favicon.ico",
           "apps/frontend/client/src/assets"
         ],
-        "styles": [
-          "apps/frontend/client/src/styles.scss"
-        ],
+        "styles": ["apps/frontend/client/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -67,7 +63,10 @@
           "browserTarget": "frontend-client:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "options": {
+        "proxyConfig": "apps/frontend/client/proxy.conf.json"
+      }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -86,16 +85,12 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/apps/frontend/client"
-      ],
+      "outputs": ["coverage/apps/frontend/client"],
       "options": {
         "jestConfig": "apps/frontend/client/jest.config.ts",
         "passWithNoTests": true
       }
     }
   },
-  "tags": [
-    "scope:client"
-  ]
+  "tags": ["scope:client"]
 }
