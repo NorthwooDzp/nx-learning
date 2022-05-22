@@ -48,5 +48,5 @@
       }
     }
   },
-  "tags": ["scope:api"]
+  "tags": ["scope:api", "type:app"]
 }

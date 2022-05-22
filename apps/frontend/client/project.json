@@ -93,5 +93,5 @@
       }
     }
   },
-  "tags": ["scope:client"]
+  "tags": ["scope:client", "type:app"]
 }
